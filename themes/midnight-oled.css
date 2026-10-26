@@ -1,0 +1,28 @@
+/**
+ * YapinMod Theme: Midnight OLED
+ * Ultra-deep dark theme with pure blacks for OLED displays.
+ */
+
+:root {
+  --bg-rail: #07080a !important;
+  --bg-side: #0e0f12 !important;
+  --bg-main: #141518 !important;
+  --bg-elev: #1c1d22 !important;
+  --bg-hover: #222329 !important;
+  --bg-active: #2a2b33 !important;
+  --bg-input: #121316 !important;
+  --text: #f4f4f7 !important;
+  --text-muted: #8e909a !important;
+  --text-faint: #6e707b !important;
+  --border: rgba(255, 255, 255, 0.06) !important;
+  --shadow: 0 12px 48px rgba(0, 0, 0, 0.85) !important;
+}
+
+body, html, [class*="app"] {
+  background-color: #0e0f12 !important;
+}
+
+aside, [class*="rail"] {
+  background-color: #07080a !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+}

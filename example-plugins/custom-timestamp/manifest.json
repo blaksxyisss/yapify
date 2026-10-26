@@ -1,0 +1,7 @@
+{
+  "id": "custom-timestamp",
+  "name": "Custom Timestamps",
+  "version": "1.0.0",
+  "author": "Community Modder",
+  "description": "Enhances chat message timestamps with customizable 24-hour format and exact relative times."
+}

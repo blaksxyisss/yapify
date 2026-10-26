@@ -1,0 +1,21 @@
+/**
+ * YapinMod Theme: Solarized Slate
+ * Warm, balanced dark palette designed for extended reading comfort.
+ */
+
+:root {
+  --bg-rail: #073642 !important;
+  --bg-side: #002b36 !important;
+  --bg-main: #09313d !important;
+  --bg-elev: #0e3d4b !important;
+  --bg-hover: #144958 !important;
+  --bg-active: #1b5667 !important;
+  --bg-input: #002b36 !important;
+  --text: #93a1a1 !important;
+  --text-muted: #839496 !important;
+  --text-faint: #586e75 !important;
+  --border: rgba(147, 161, 161, 0.12) !important;
+  --accent: #2aa198 !important;
+  --accent-hover: #268bd2 !important;
+  --accent-soft: rgba(42, 161, 152, 0.22) !important;
+}

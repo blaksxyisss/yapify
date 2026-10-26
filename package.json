@@ -1,0 +1,28 @@
+{
+  "name": "yapinmod",
+  "version": "1.0.0",
+  "description": "A Vencord-style local modification framework for the Yapin.gg desktop application on Windows",
+  "main": "src/main/index.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "install:mod": "node installer/install.js",
+    "uninstall:mod": "node installer/uninstall.js",
+    "test": "node tests/run-all.js"
+  },
+  "keywords": [
+    "yapin",
+    "yapper",
+    "electron",
+    "mod",
+    "vencord",
+    "client-mod",
+    "plugins",
+    "themes"
+  ],
+  "author": "YapinMod Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron/asar": "^4.3.1",
+    "esbuild": "^0.28.2"
+  }
+}

@@ -1,0 +1,28 @@
+/**
+ * YapinMod Theme: Nord Frost
+ * Arctic Nordic color palette inspired by the Arctic landscape.
+ */
+
+:root {
+  --bg-rail: #242933 !important;
+  --bg-side: #2e3440 !important;
+  --bg-main: #3b4252 !important;
+  --bg-elev: #434c5e !important;
+  --bg-hover: #4c566a !important;
+  --bg-active: #57637a !important;
+  --bg-input: #2e3440 !important;
+  --text: #eceff4 !important;
+  --text-muted: #d8dee9 !important;
+  --text-faint: #939aa8 !important;
+  --border: rgba(236, 239, 244, 0.1) !important;
+  --accent: #88c0d0 !important;
+  --accent-hover: #81a1c1 !important;
+  --accent-soft: rgba(136, 192, 208, 0.2) !important;
+  --danger: #bf616a !important;
+  --success: #a3be8c !important;
+  --warning: #ebcb8b !important;
+}
+
+body, html {
+  background-color: #2e3440 !important;
+}
