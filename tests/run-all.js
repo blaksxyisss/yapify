@@ -7,7 +7,8 @@ const path = require('node:path');
 
 const TESTS = [
   'tests/plugin-system.test.js',
-  'tests/theme.test.js'
+  'tests/theme.test.js',
+  'tests/no-pings.test.js'
 ];
 
 console.log('====================================================');

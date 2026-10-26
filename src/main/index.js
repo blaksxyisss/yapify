@@ -29,7 +29,8 @@ const DEFAULT_CONFIG = {
     'ui-tweaks': true,
     'qol-features': true,
     'autoscroll': true,
-    'window-mods': true
+    'window-mods': true,
+    'no-pings': false
   },
   pluginSettings: {
     'ui-tweaks': {
@@ -50,6 +51,13 @@ const DEFAULT_CONFIG = {
       borderlessFullscreen: false,
       macButtons: true,
       macButtonsPosition: 'left'
+    },
+    'no-pings': {
+      active: true,
+      muteSounds: true,
+      suppressDesktopNotifs: true,
+      hideBadges: true,
+      suppressTaskbarBadge: true
     }
   }
 };

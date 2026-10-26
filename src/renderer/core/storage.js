@@ -93,7 +93,8 @@ class Storage {
         'custom-accent': true,
         'ui-tweaks': true,
         'qol-features': true,
-        'autoscroll': true
+        'autoscroll': true,
+        'no-pings': false
       },
       pluginSettings: {
         'ui-tweaks': {
@@ -109,6 +110,13 @@ class Storage {
         },
         'autoscroll': {
           autoScrollDefault: true
+        },
+        'no-pings': {
+          active: true,
+          muteSounds: true,
+          suppressDesktopNotifs: true,
+          hideBadges: true,
+          suppressTaskbarBadge: true
         }
       }
     };

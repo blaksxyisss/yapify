@@ -19,6 +19,7 @@ import { CopyRawPlugin } from './plugins/copy-raw.js';
 import { TypingIndicatorPlugin } from './plugins/typing-indicator.js';
 import { AutoScrollPlugin } from './plugins/autoscroll.js';
 import { WindowModsPlugin } from './plugins/window-mods.js';
+import { NoPingsPlugin } from './plugins/no-pings.js';
 import { uiInjector } from './ui/injector.js';
 import { events } from './core/event-bus.js';
 
@@ -47,6 +48,7 @@ async function bootstrap() {
     pluginManager.register(TypingIndicatorPlugin);
     pluginManager.register(AutoScrollPlugin);
     pluginManager.register(WindowModsPlugin);
+    pluginManager.register(NoPingsPlugin);
 
     // 4. Load external plugins from %APPDATA%/YapinMod/plugins
     if (window.yapinmodBridge?.invoke) {
