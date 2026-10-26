@@ -132,7 +132,8 @@ export const CORE_STYLES = `
 
 .yf-panel-wrapper {
   padding: 32px 40px;
-  max-width: 740px;
+  max-width: 1100px;
+  box-sizing: border-box;
 }
 
 @keyframes yfFadeIn {
@@ -399,16 +400,35 @@ export const CORE_STYLES = `
 }
 
 /* ============================================================
-   PLUGIN CARDS
+   PLUGIN CARDS (2 Plugins Per Row)
    ============================================================ */
+
+#yf-plugins-list,
+#ym-plugins-list-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  #yf-plugins-list,
+  #ym-plugins-list-container {
+    grid-template-columns: 1fr;
+  }
+}
 
 .yf-plugin-card {
   background: var(--bg-elev, rgba(255, 255, 255, 0.03));
   border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
   border-radius: var(--radius, 10px);
-  padding: 16px 20px;
-  margin-bottom: 12px;
+  padding: 16px 18px;
+  margin-bottom: 0;
   transition: all 0.15s ease;
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .yf-plugin-card:hover {
@@ -424,6 +444,7 @@ export const CORE_STYLES = `
   align-items: center;
   justify-content: space-between;
   margin-bottom: 6px;
+  gap: 8px;
 }
 
 .yf-plugin-info {
@@ -431,12 +452,14 @@ export const CORE_STYLES = `
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
+  min-width: 0;
 }
 
 .yf-plugin-name {
   font-size: 15px;
   font-weight: 600;
   color: var(--text, #ececf1);
+  word-break: break-word;
 }
 
 .yf-chip {
@@ -460,10 +483,11 @@ export const CORE_STYLES = `
 }
 
 .yf-plugin-desc {
-  font-size: 13px;
+  font-size: 12.5px;
   color: var(--text-muted, #9c9daa);
   margin: 0 0 8px 0;
   line-height: 1.45;
+  word-break: break-word;
 }
 
 .yf-plugin-author {
@@ -478,6 +502,7 @@ export const CORE_STYLES = `
   padding: 6px 8px;
   background: rgba(242, 85, 90, 0.08);
   border-radius: 4px;
+  word-break: break-word;
 }
 
 .yf-plugin-settings {
@@ -492,7 +517,7 @@ export const CORE_STYLES = `
 
 .yf-swatch-grid, .ym-swatch-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
   gap: 8px;
   margin-top: 10px;
 }
@@ -500,14 +525,30 @@ export const CORE_STYLES = `
 .yf-swatch-btn, .ym-swatch-btn {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 8px 12px;
+  gap: 8px;
+  padding: 6px 10px;
   background: var(--bg-elev, rgba(255, 255, 255, 0.04));
   border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
   border-radius: var(--radius, 8px);
   cursor: pointer;
   transition: all 0.15s ease;
   color: var(--text, #ececf1);
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.yf-swatch-name, .ym-swatch-name {
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.yf-field-row, .ym-field-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .yf-swatch-btn:hover, .ym-swatch-btn:hover {
@@ -702,8 +743,8 @@ export const CORE_STYLES = `
 }
 
 .ym-modal-container {
-  width: min(90vw, 900px);
-  height: min(85vh, 640px);
+  width: min(94vw, 1060px);
+  height: min(88vh, 680px);
   background: var(--bg-base, #1a1b1f);
   border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
   border-radius: 14px;
@@ -911,9 +952,13 @@ export const CORE_STYLES = `
   background: var(--bg-elev, rgba(255, 255, 255, 0.03));
   border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
   border-radius: 10px;
-  padding: 16px 20px;
-  margin-bottom: 12px;
+  padding: 16px 18px;
+  margin-bottom: 0;
   transition: all 0.15s ease;
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .ym-plugin-card:hover {

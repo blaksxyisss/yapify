@@ -5,17 +5,17 @@
  * Usage: Open Yapper desktop app → F12 → Console → paste this script
  */
 
-(function() {
+(function () {
   // Find the left sidebar/rail
   const selectors = [
-    'aside', 'nav', '[class*="sidebar"]', '[class*="rail"]', 
+    'aside', 'nav', '[class*="sidebar"]', '[class*="rail"]',
     '[class*="server"]', '[class*="channel"]', '[class*="nav"]',
     '[class*="side"]', '[class*="panel"]', '[class*="left"]',
     '[class*="menu"]', '[class*="divider"]', '[class*="tab"]'
   ];
 
   console.log('=== DOM INSPECTOR FOR YAPIN SIDEBAR ===');
-  
+
   selectors.forEach(sel => {
     const els = document.querySelectorAll(sel);
     if (els.length > 0) {
@@ -64,3 +64,6 @@
   });
   console.groupEnd();
 })();
+
+//3b52ee267fce2fb266737e4eebf1611707055a4992afb83fe920e2ea9debf186f93bc76fc41ed19802186e176b6c2589236209745877980d0effc53f95ff6251
+
