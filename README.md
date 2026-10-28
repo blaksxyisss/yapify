@@ -110,4 +110,4 @@ npm test
 
 ## license
 
-MIT
+GPL-3.0
